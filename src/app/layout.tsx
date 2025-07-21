@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
   description: siteConfig.description,
+  keywords: [
+    'daily quotes',
+    'book quotes',
+    'quote of the day',
+    'inspirational quotes',
+    'reading highlights',
+  ],
+  authors: [
+    {
+      name: 'Ahmad Ghallab',
+      url: siteConfig.links.linkedin,
+    },
+  ],
+  creator: 'Ahmad Ghallab',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

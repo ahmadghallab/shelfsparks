@@ -4,8 +4,8 @@ export const siteConfig = {
   description:
     "Save and share quotes that spark inspiration. Discover a daily random highlight from your reading and keep the words that matter.",
   links: {
-    linkedin: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn-ui/ui",
+    linkedin: "https://www.linkedin.com/in/ahmadghallab/",
+    github: "https://github.com/ahmadghallab/shelfsparks",
   }
 }
 
