@@ -6,6 +6,7 @@
 @custom-variant fixed (&:is(.layout-fixed *));
 
 @theme inline {
+  --pattern-fg: color-mix(in oklab, var(--color-black) 5%, transparent);
   --breakpoint-2xl: 1400px;
   --breakpoint-3xl: 1600px;
   --breakpoint-4xl: 2000px;
@@ -121,7 +122,11 @@
 }
 
 @utility container {
-  @apply max-w-screen-xl mx-auto;
+  @apply max-w-screen-xl mx-auto px-4;
+}
+
+@utility container-background {
+  @apply row-span-full row-start-1 hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:col-start-3 md:block dark:[--pattern-fg:var(--color-white)]/10;
 }
 
 @utility no-scrollbar {

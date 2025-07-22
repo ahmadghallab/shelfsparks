@@ -1,16 +1,24 @@
+import { ShareButton } from '@/components/share-button';
 import { getRandomQuote } from '../actions/quotes';
+import { ShuffleButton } from '@/components/shuffle-button';
+import { Separator } from '@/components/ui/separator';
 
 export default async function Home() {
   const quote = await getRandomQuote();
 
   return (
-    <figure className='container-wrapper flex flex-1 flex-col items-center justify-center'>
-      <div className='flex flex-col gap-5 px-8'>
-        <blockquote className='max-w-2xl'>
-          <p className="relative before:pointer-events-none before:absolute before:top-4 before:-left-6 before:text-[8rem] before:text-foreground/25 before:content-['“'] sm:before:-left-8 sm:before:text-[10rem] text-4xl/12 sm:text-5xl/14">
-            {quote.spark}
-          </p>
-        </blockquote>
+    <figure className='flex flex-1 flex-col justify-center gap-5 px-8 max-w-screen-lg mx-auto'>
+      <div className='relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]'>
+        <h1 className='text-5xl/14 sm:text-6xl/16'>{quote.spark}</h1>
+      </div>
+      <div className='relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw]'>
+        <p className='max-w-(--breakpoint-md) px-2 font-normal text-muted-foreground max-sm:px-4 dark:text-gray-400'>
+          The source is not available.
+        </p>
+      </div>
+      <div className='mt-4 sm:mt-10 sm:px-2 relative before:absolute before:top-0 before:h-px before:w-[200vw] before:bg-gray-950/5 dark:before:bg-white/10 before:-left-[100vw] after:absolute after:bottom-0 after:h-px after:w-[200vw] after:bg-gray-950/5 dark:after:bg-white/10 after:-left-[100vw] flex gap-3'>
+        <ShuffleButton />
+        <ShareButton />
       </div>
     </figure>
   );
