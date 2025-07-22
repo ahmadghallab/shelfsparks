@@ -1,7 +1,6 @@
 import { ShareButton } from '@/components/share-button';
 import { getRandomQuote } from '../actions/quotes';
 import { ShuffleButton } from '@/components/shuffle-button';
-import { Separator } from '@/components/ui/separator';
 
 export default async function Home() {
   const quote = await getRandomQuote();
