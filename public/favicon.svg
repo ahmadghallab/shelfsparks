@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" rx="100" fill="black"></rect>
+<path d="M303 90L398 422.5" stroke="white" stroke-width="47.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M208 90V422.5" stroke="white" stroke-width="47.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M113 137.5V422.5" stroke="white" stroke-width="47.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

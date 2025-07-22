@@ -8,7 +8,7 @@ export function Logo({ className, ...props }: React.ComponentProps<'h3'>) {
       {...props}
     >
       <Library className='size-5' />
-      Shelfsparks
+      ShelfSparks
     </h3>
   );
 }

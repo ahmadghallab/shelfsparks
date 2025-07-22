@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   creator: 'Ahmad Ghallab',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/favicon.svg',
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
